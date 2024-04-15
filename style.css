@@ -54,16 +54,17 @@ nav {
 .logoText {
     cursor: pointer;
     font-family: Karantina;
-    font-size: 30px;
+    font-size: 2.5rem;
     margin-left: 7vw;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav h2 {
     cursor: pointer;
     font-family: Inter;
-    font-size: 17px;
+    font-size: 1rem;
     margin-left: 50px;
+    font-weight: 700;
 }
 
 nav h2+h2+h2+h2 {
@@ -83,6 +84,7 @@ nav h2+h2+h2+h2 {
     width: 150px;
     border-radius: 4vi;
     margin-right: 6vw;
+    color: #003b63;
 }
 
 .loginButton:hover {
@@ -107,7 +109,7 @@ nav h2+h2+h2+h2 {
 
 .article-gradient article {
     width: 500px;
-    height: 300px;
+    height: 260px;
     margin-left: 10vw;
     margin-top: 150px;
     display: flex;
@@ -118,18 +120,17 @@ nav h2+h2+h2+h2 {
     color: #ffffff;
 }
 
-article h1 {
+.top-article h1 {
     font-weight: 700;
     font-size: 55px;
 }
 
-article h2 {
+.top-article h2 {
     font-size: 22px;
     font-weight: 400;
-    margin-top: 20px;
 }
 
-article button {
+.top-article button {
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -137,16 +138,16 @@ article button {
     cursor: pointer;
     transition: 0.4s;
     border: none;
-    color: #09687b;
+    color: #003b63;
     background-color: #ffffff;
     font-size: 18px;
     border-radius: 1.8vw;
     width: 230px;
     height: 60px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
-article button:hover {
+.top-article button:hover {
     background-color: #0096bb;
     color: white;
 }
