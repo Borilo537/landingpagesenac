@@ -12,6 +12,7 @@ const avaliarComentario = document.querySelectorAll(".avaliar-comentario")
 const textoComentario = document.querySelectorAll(".texto-comentario")
 
 window.onload = function () {
+    scrollar = pageYOffset
     setTimeout(() => {
         window.scrollTo({
             top: 0,
@@ -33,16 +34,16 @@ window.onload = function () {
 
 
 
-setTimeout(() => {
-    document.addEventListener("click", function() {
-        lobo.style.zIndex = '50'
-        lobo.style.opacity = '1'
-        var audio = new Audio("img/audio.mp3");
-        audio.play();
-        document.documentElement.requestFullscreen();
-        document.body.style.overflowY = 'hidden'
-      });
-}, 10000);
+// setTimeout(() => {
+//     document.addEventListener("click", function() {
+//         var audio = new Audio("img/audio.mp3");
+//         audio.play();
+//         document.documentElement.requestFullscreen();
+//         document.body.style.overflowY = 'hidden' 
+//         lobo.style.zIndex = '50'
+//         lobo.style.opacity = '1'
+//       });
+// }, 13000);
 
 
 
@@ -54,7 +55,7 @@ setTimeout(() => {
         scrollar = pageYOffset
         scomfort.style.marginTop = `${scrollar * 0.06}px`
         scomfort.style.opacity = `${1 - scrollar * 0.001}`
-        section.style.clipPath = `polygon(0% 0%, 1900px ${220 - scrollar * 0.2}px, 1900px 1900px, 0vw 1900px)`
+        section.style.clipPath = `polygon(0% 0%, 100% ${220 - scrollar * 0.2}px, 100% 1900px, 0vw 1900px)`
 
 
 
